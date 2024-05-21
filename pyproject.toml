@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-nextjs-book-club"
+version = "0.1.0"
+description = "Book club app"
+authors = ["Jarema Piekutowski <jarema.piekutowski@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_nextjs_book_club"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.6"
+djangorestframework = "^3.15.1"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
